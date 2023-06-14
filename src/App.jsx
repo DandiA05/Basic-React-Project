@@ -8,7 +8,7 @@ import ReducerState from "./components/ReducerState";
 import Dashboard from "./Screens/Dashboard";
 const App = () => {
   return (
-    <div>
+    <div className="container mx-auto">
       {/* <ReducerState></ReducerState> */}
       {/* <Users /> */}
       <Dashboard></Dashboard>

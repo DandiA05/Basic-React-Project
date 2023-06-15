@@ -23,7 +23,7 @@ const Dashboard = ({ id }) => {
           <SideBar />
         </div>
         {/* basis-3/4 */}
-        <div className={`${showSidebar ? " basis-3/4" : " "}`}>
+        <div className={" basis-3/4"}>
           <Outlet />
         </div>
       </div>

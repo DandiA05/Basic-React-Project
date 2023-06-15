@@ -7,7 +7,7 @@ const Users = () => {
   return (
     <div>
       {users.map((item) => (
-        <Anything name={item.name} />
+        <Anything key={item.name} name={item.name} />
       ))}
     </div>
   );

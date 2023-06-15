@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Content from "./Components/Content";
+import Content from "./Components/UpComing";
 import Header from "./Components/Header";
 import { SideBar } from "./Components/SideBar";
+import { Outlet } from "react-router-dom";
 
-const Dashboard = () => {
-  const [idMenu, setIdMenu] = useState(1);
+const Dashboard = ({ id }) => {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
     <div>
@@ -20,10 +20,11 @@ const Dashboard = () => {
               : "lg:block hidden basis-1/4 bg-gray-100"
           }`}
         >
-          <SideBar selected={setIdMenu} items={idMenu} />
+          <SideBar />
         </div>
-        <div className="basis-3/4">
-          <Content item={idMenu} />
+        {/* basis-3/4 */}
+        <div className={`${showSidebar ? " basis-3/4" : " "}`}>
+          <Outlet />
         </div>
       </div>
     </div>

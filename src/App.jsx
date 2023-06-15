@@ -6,12 +6,14 @@ import "./App.css";
 import Users from "./components/Users";
 import ReducerState from "./components/ReducerState";
 import Dashboard from "./Screens/Dashboard";
+import FetchAPI from "./components/FetchAPI";
 const App = () => {
   return (
-    <div className="container mx-auto">
+    <div>
       {/* <ReducerState></ReducerState> */}
       {/* <Users /> */}
-      <Dashboard></Dashboard>
+      {/* <Dashboard></Dashboard> */}
+      <FetchAPI />
     </div>
   );
 };
